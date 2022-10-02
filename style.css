@@ -11,29 +11,47 @@
 }
 
 /* -------Header----------- */
+
+
 header h2{
-    
     font-size: 2.5rem;
     font-weight: 700;
-    color:#fd9809 ;
     text-align: center;
-    border-bottom: 4px solid pink;
+
+    margin-bottom: px;
+}
+.border-header{
+    border: none;
+    border-bottom: 4px solid #fd9809;
+    width: 250px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 /* ---------main-------- */
-.card{
-    width: 350px;
-    border: 2px solid yellow;
+main{
+    display: flex;
+    gap: 25px;
+    width: 90%;
+    margin: auto;
 }
-.card-title img{
-    width: 345px;
+
+
+.card, .card-title img{
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
 }
+
 .price{
     background-color: #fd9809;
     width: 80px;
     padding: 12px 20px ;
     border-radius: 5px;
     text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 700;
     justify-content: center;
 }
 .card-detels{
@@ -42,28 +60,28 @@ header h2{
 .card-detels h3{
     font-size: 25px;
     font-weight: 700;
-    margin: 5px 0px 5px 0;
+    margin: 10px 0px ;
 }
 .card-detels p{
     font-size: 18px;
     font-weight: 400;
     color: rgba(49, 47, 47, 0.986);
 }
-.chiken-kgm{
+.chicken-kgm{
 
     display: flex;
     justify-content: space-between;
     border-bottom: 3px solid rgba(128, 128, 128, 0.199);
 }
-.chiken-kgm p{
+.chicken-kgm p{
     color: #fd9809;
     font-weight: 700;
     font-size: 1.3rem;
     margin: 10px 0px;
 }
-.chicken {
-    color: #fff;
-    background-color: #fd9809;
+.chicken-kgm .chicken {
+   color: rgb(247, 242, 242);
+    background-color: #cc3c32;
     padding: 2px 18px;
     font-size: 1.1rem;
     border-radius: 10px;
@@ -76,4 +94,21 @@ header h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.price-order h3{
+    font-size: 2.2rem;
+    margin:  10px 0px;
+    color: #cc3c32;
+}
+#decrement,#increment{
+    padding: 5px 18px;
+    font-weight: 700;
+    background-color: gray;
+    color:#fff;
+    font-size: 2rem;
+}
+#order {
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 0px 20px;
 }
