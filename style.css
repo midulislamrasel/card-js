@@ -14,6 +14,7 @@
 
 
 header h2{
+    margin-top: 25px;
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
@@ -28,13 +29,20 @@ header h2{
     margin-bottom: 30px;
     margin-top: 20px;
 }
+.card-calculator{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+}
 
 /* ---------main-------- */
 main{
     display: flex;
     gap: 25px;
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
+    flex-wrap: wrap;
 }
 
 
@@ -111,4 +119,80 @@ main{
     font-size: 2.4rem;
     font-weight: 700;
     padding: 0px 20px;
+}
+
+
+/* detels-calculator */
+.detels-calculator{
+    background-color: #fd9809;
+    padding: 30px;
+    height: 600px;
+    border-radius: 10px;
+}
+.bazar-list h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+.bazar-list p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 11px 0px;
+    color: #fff;
+}
+
+.bazar-list p span {
+    color: #CC3C32;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.price-vat {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:  25px 0px;
+}
+.price-vat h4{
+    font-size: 22px;
+    color: #fff;
+}
+.price-vat span{
+    color: #CC3C32;
+}
+.price-vat h2 {
+    font-size: 2.6rem;
+    color: #f7f0f0;
+}
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0px;
+    align-items: center;
+}
+
+.btn-price {
+    font-size: 2rem;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 5px;
+    background-color: #CC3C32;
+    color: #fff;
+    font-weight: 700;
+}
+#price{
+    font-size: 2.5rem;
+    color: #CC3C32;
+}
+.btn-price span{
+    color: #fff;
+}
+.buy-now{
+    font-size: 2rem;
+    border: none;
+    padding: 10px 100px;
+    border-radius: 5px;
+    background-color: #CC3C32;
+    color: #fff;
+    font-weight: 700;
 }
