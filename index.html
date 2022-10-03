@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Card</title>
 </head>
@@ -18,7 +19,7 @@
         <div class="card">
             <div class="card-title">
                 <img src="./img/Burger.jpg" alt="">
-                <p class="price">$5.99</p>
+                <p class="price">$ <span id="Burger-Price">5.99</span></p>
                 <div class="card-detels">
                         <h3>Cheese Burger</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quidem corporis, voluptatem aperiam earum quae!</p>
@@ -27,21 +28,22 @@
                             <p class="chicken">Chicken</p>
                         </div>
                         <div class="price-order">
-                            <h3>$ <span>0.00</span></h3>
+                            <h3>$ <span id="product-price">00</span></h3>
                             <div class="decrement-increment">
-                                <p id="decrement">-</p>
+                                <p id="decrement"><i class="fa-solid fa-minus"></i></p>
                                 <p id="order">00</p>
-                                <p id="increment">+</p>
+                                <p id="increment"><i class="fa-solid fa-plus"></i></p>
                             </div>
                         </div>
                 </div>
             </div>
         </div>
-        <!-- card 02 -->
+
+        <!-- card 02--->
         <div class="card">
             <div class="card-title">
                 <img src="./img/Pizza.jpg" alt="">
-                <p class="price">$4.50</p>
+                <p class="price">$ <span id="Burger-Price2">5.99</span></p>
                 <div class="card-detels">
                         <h3>Pizza</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quidem corporis, voluptatem aperiam earum quae!</p>
@@ -50,11 +52,11 @@
                             <p class="chicken">Mushroom</p>
                         </div>
                         <div class="price-order">
-                            <h3>$ <span>0.00</span></h3>
+                            <h3>$ <span id="prodact-price2">0.00</span></h3>
                             <div class="decrement-increment">
-                                <p id="decrement">-</p>
-                                <p id="order">00</p>
-                                <p id="increment">+</p>
+                                <p id="decrement"><i class="fa-solid fa-minus"></i></p>
+                                <p id="order2">00</p>
+                                <p id="increment2"><i class="fa-solid fa-plus"></i></p>
                             </div>
                         </div>
                 </div>
@@ -62,7 +64,7 @@
         </div>
 
         <!-- card 03 -->
-        <div class="card">
+<!--         <div class="card">
             <div class="card-title">
                 <img src="./img/sandwhich&French Fries.jpg" alt="">
                 <p class="price">$3.55</p>
@@ -74,18 +76,19 @@
                             <p class="chicken">Chicken</p>
                         </div>
                         <div class="price-order">
-                            <h3>$ <span>0.00</span></h3>
+                            <h3>$ <span id="prodact-price">0.00</span></h3>
                             <div class="decrement-increment">
-                                <p id="decrement">-</p>
+                                <p id="decrement"><i class="fa-solid fa-minus"></i></p>
                                 <p id="order">00</p>
-                                <p id="increment">+</p>
+                                <p id="increment"><i class="fa-solid fa-plus"></i></p>
                             </div>
                         </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
         <!-- card 04 -->
-        <div class="card">
+<!--         <div class="card">
             <div class="card-title">
                 <img src="./img/chock kebab.jpg" alt="">
                 <p class="price">$4.00</p>
@@ -97,18 +100,19 @@
                             <p class="chicken">chock kebab </p>
                         </div>
                         <div class="price-order">
-                            <h3>$ <span>0.00</span></h3>
+                            <h3>$ <span id="prodact-price">0.00</span></h3>
                             <div class="decrement-increment">
-                                <p id="decrement">-</p>
+                                <p id="decrement"><i class="fa-solid fa-minus"></i></p>
                                 <p id="order">00</p>
-                                <p id="increment">+</p>
+                                <p id="increment"><i class="fa-solid fa-plus"></i></p>
                             </div>
                         </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+
         <!-- card 05 -->
-        <div class="card">
+<!--         <div class="card">
             <div class="card-title">
                 <img src="./img/chicken.jpg" alt="">
                 <p class="price">$3.72</p>
@@ -120,19 +124,19 @@
                             <p class="chicken">Chicken fry</p>
                         </div>
                         <div class="price-order">
-                            <h3>$ <span>0.00</span></h3>
+                            <h3>$ <span id="prodact-price">0.00</span></h3>
                             <div class="decrement-increment">
-                                <p id="decrement">-</p>
+                                <p id="decrement"><i class="fa-solid fa-minus"></i></p>
                                 <p id="order">00</p>
-                                <p id="increment">+</p>
+                                <p id="increment"><i class="fa-solid fa-plus"></i></p>
                             </div>
                         </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- card 06 -->
-        <div class="card">
+<!--         <div class="card">
             <div class="card-title">
                 <img src="./img/cow.jpg" alt="">
                 <p class="price">$6.55</p>
@@ -144,16 +148,18 @@
                             <p class="chicken">Cow Fry</p>
                         </div>
                         <div class="price-order">
-                            <h3>$ <span>0.00</span></h3>
+                            <h3>$ <span id="prodact-price">0.00</span></h3>
                             <div class="decrement-increment">
-                                <p id="decrement">-</p>
+                                <p id="decrement"><i class="fa-solid fa-minus"></i></p>
                                 <p id="order">00</p>
-                                <p id="increment">+</p>
+                                <p id="increment"><i class="fa-solid fa-plus"></i></p>
                             </div>
                         </div>
                 </div>
             </div>
-        </div>
+        </div>  -->
+
+        
     </main>
     <div class="detels-calculator">
        <div class="bazar-list">
