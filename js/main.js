@@ -65,4 +65,27 @@ document.getElementById('frenchFries-decrement').addEventListener('click', funct
     decrement('frenchFries-order','frenchFries-Price','frenchFries-total-price');
 })
 
+/* ------Chock kebab-------- */
+document.getElementById('chockKebab-increment').addEventListener('click', function () {
+    increment('chockKebab-order','chockKebab-Price','chockKebab-total-price');
+})
+document.getElementById('chockKebab-decrement').addEventListener('click', function () {
+    decrement('chockKebab-order','chockKebab-Price','chockKebab-total-price');
+})
 
+/* -----------ChickenFry---------- */
+
+document.getElementById('chickenFry-increment').addEventListener('click', function () {
+    increment('chickenFry-order','chickenFry-Price','chickenFry-total-price');
+})
+document.getElementById('chickenFry-decrement').addEventListener('click', function () {
+    decrement('chickenFry-order','chickenFry-Price','chickenFry-total-price');
+})
+
+/* --------cowFry------- */
+document.getElementById('cowFry-increment').addEventListener('click', function () {
+    increment('cowFry-order','cowFry-Price','cowFry-total-price');
+})
+document.getElementById('cowFry-decrement').addEventListener('click', function () {
+    decrement('cowFry-order','cowFry-Price','cowFry-total-price');
+})
