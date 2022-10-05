@@ -109,7 +109,12 @@ main{
     margin:  10px 0px;
     color: #cc3c32;
 }
-#decrement,#increment{
+.fa-solid, .fas {
+    font-weight: 900;
+    font-size: 2rem;
+    color: #fff;
+}
+.decrement,.increment{
     padding: 5px 10px;
     font-weight: 700;
     background-color: gray;
@@ -117,7 +122,7 @@ main{
     font-size: 2rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#order {
+p.order {
     font-size: 2.4rem;
     font-weight: 700;
     padding: 0px 20px;
@@ -182,8 +187,8 @@ main{
     color: #fff;
     font-weight: 700;
 }
-#price{
-    font-size: 2.5rem;
+.price{
+    font-size: 1.5rem;
     color: #CC3C32;
 }
 .btn-price span{
