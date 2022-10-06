@@ -93,9 +93,24 @@ document.getElementById('cowFry-decrement').addEventListener('click', function (
 
 
 document.getElementById('burger-order-btn').addEventListener('click', function () {
+    /* --------Burger Name------------- */
     const cheeseBurgerName = document.getElementById('cheese-burger');
     const fullName = cheeseBurgerName.innerText;
     const bazarList = document.createElement('p');
     bazarList.innerText =`${ fullName }` ;
-    document.getElementById("bazar-list").appendChild(bazarList);
+    const bazarTotalList = document.getElementById("bazar-list").appendChild(bazarList);
+    /* -----------BurgerOrder--------------- */
+    const burgerOrder = document.getElementById('burger-order');
+    const order = burgerOrder.innerText;
+    orderList = document.createElement('span');
+    orderList.innerText = `${order} pes`;
+    bazarTotalList.appendChild(orderList);
+    /*----------- BurgerTotalPrice ------------*/
+    const totoalPrice = document.getElementById('burger-total-price');
+    const price = totoalPrice.innerText;
+    priceTotal = document.createElement('span');
+    priceTotal.innerText = `$ ${price}`;
+    bazarTotalList.appendChild(priceTotal);
+
+
 })
