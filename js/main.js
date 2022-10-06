@@ -89,3 +89,13 @@ document.getElementById('cowFry-increment').addEventListener('click', function (
 document.getElementById('cowFry-decrement').addEventListener('click', function () {
     decrement('cowFry-order','cowFry-Price','cowFry-total-price');
 })
+
+
+
+document.getElementById('burger-order-btn').addEventListener('click', function () {
+    const cheeseBurgerName = document.getElementById('cheese-burger');
+    const fullName = cheeseBurgerName.innerText;
+    const bazarList = document.createElement('p');
+    bazarList.innerText =`${ fullName }` ;
+    document.getElementById("bazar-list").appendChild(bazarList);
+})
