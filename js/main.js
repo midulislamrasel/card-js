@@ -106,11 +106,15 @@ document.getElementById('burger-order-btn').addEventListener('click', function (
     orderList.innerText = `${order} pes`;
     bazarTotalList.appendChild(orderList);
     /*----------- BurgerTotalPrice ------------*/
-    const totoalPrice = document.getElementById('burger-total-price');
-    const price = totoalPrice.innerText;
+    const itemPrice = document.getElementById('burger-total-price');
+    const totalItemprice = itemPrice.innerText;
     priceTotal = document.createElement('span');
-    priceTotal.innerText = `$ ${price}`;
+    priceTotal.className = 'single-item-price';
+    priceTotal.innerText = `$ ${totalItemprice}`;
     bazarTotalList.appendChild(priceTotal);
+    console.log(bazarTotalList)
 
+    
 
+    /* -------------- TotalPrice--------------- */
 })
