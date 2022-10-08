@@ -198,9 +198,13 @@ p.order {
 }
 .total-price {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 25px 0px;
     align-items: center;
+}
+span#price {
+    color: #CC3C32;
+    font-size: 3rem;
 }
 
 .btn-price {
