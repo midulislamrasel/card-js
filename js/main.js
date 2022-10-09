@@ -161,4 +161,19 @@ document.getElementById('burger-order-btn').addEventListener('click', function (
 
 document.getElementById('frenchFries-order-btn').addEventListener('click', function () {
     abcde('frenchFries','bazar-list','frenchFries-order','frenchFries-total-price')
- })
+})
+ 
+/* Chock kebab */
+document.getElementById('kebab-order-btn').addEventListener('click', function () {
+    abcde('kebab','bazar-list','chockKebab-order','chockKebab-total-price')
+})
+
+/* Chicken */
+document.getElementById('chickenFry-order-btn').addEventListener('click', function () {
+    abcde('chickenFry','bazar-list','chickenFry-order','chickenFry-total-price')
+})
+
+/* Cow */
+document.getElementById('cowFry-order-btn').addEventListener('click', function () {
+    abcde('cowFry','bazar-list','cowFry-order','cowFry-total-price')
+})
