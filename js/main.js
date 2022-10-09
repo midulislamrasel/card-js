@@ -92,29 +92,73 @@ document.getElementById('cowFry-decrement').addEventListener('click', function (
 
 
 
-document.getElementById('burger-order-btn').addEventListener('click', function () {
-    /* --------Burger Name------------- */
-    const cheeseBurgerName = document.getElementById('cheese-burger');
+// document.getElementById('burger-order-btn').addEventListener('click', function () {
+//     /* --------Burger Name------------- */
+//     const cheeseBurgerName = document.getElementById('cheese-burger');
+//     const fullName = cheeseBurgerName.innerText;
+//     const bazarList = document.createElement('p');
+//     bazarList.innerText =`${ fullName }` ;
+//     const bazarTotalList = document.getElementById("bazar-list").appendChild(bazarList);
+//     /* -----------BurgerOrder--------------- */
+//     const burgerOrder = document.getElementById('burger-order');
+//     const order = burgerOrder.innerText;
+//     orderList = document.createElement('span');
+//     orderList.innerText = `${order} pes`;
+//     bazarTotalList.appendChild(orderList);
+//     /*----------- BurgerTotalPrice ------------*/
+//     const itemPrice = document.getElementById('burger-total-price');
+//     const totalItemprice = itemPrice.innerText;
+//     priceTotal = document.createElement('span');
+//     priceTotal.className = 'single-item-price';
+//     priceTotal.innerText = `$ ${totalItemprice}`;
+//     bazarTotalList.appendChild(priceTotal);
+//     console.log(bazarTotalList)
+
+//     /* -------------- TotalPrice--------------- */
+// })
+
+
+
+
+
+/* testing function */
+
+function abcde(pizza,bazar,order,price) {
+    const cheeseBurgerName = document.getElementById(pizza);
     const fullName = cheeseBurgerName.innerText;
     const bazarList = document.createElement('p');
     bazarList.innerText =`${ fullName }` ;
-    const bazarTotalList = document.getElementById("bazar-list").appendChild(bazarList);
+    const bazarTotalList = document.getElementById(bazar).appendChild(bazarList);
     /* -----------BurgerOrder--------------- */
-    const burgerOrder = document.getElementById('burger-order');
-    const order = burgerOrder.innerText;
+    const burgerOrder = document.getElementById(order);
+    const order2 = burgerOrder.innerText;
     orderList = document.createElement('span');
-    orderList.innerText = `${order} pes`;
+    orderList.innerText = `${order2} pes`;
     bazarTotalList.appendChild(orderList);
     /*----------- BurgerTotalPrice ------------*/
-    const itemPrice = document.getElementById('burger-total-price');
+    const itemPrice = document.getElementById(price);
     const totalItemprice = itemPrice.innerText;
     priceTotal = document.createElement('span');
     priceTotal.className = 'single-item-price';
     priceTotal.innerText = `$ ${totalItemprice}`;
-    bazarTotalList.appendChild(priceTotal);
-    console.log(bazarTotalList)
+    const result = bazarTotalList.appendChild(priceTotal);
+    // console.log(bazarTotalList)
+    return result;
+}
 
-    
-
-    /* -------------- TotalPrice--------------- */
+/* burger */
+document.getElementById('burger-order-btn').addEventListener('click', function () { 
+    abcde('cheese-burger','bazar-list','burger-order','burger-total-price')
 })
+
+
+/* pizza */
+ document.getElementById('pizza-order-btn').addEventListener('click', function () {
+    abcde('pizza','bazar-list','chicken-order','chicken-total-price')
+ })
+
+/* French Fries */
+
+document.getElementById('frenchFries-order-btn').addEventListener('click', function () {
+    abcde('frenchFries','bazar-list','frenchFries-order','frenchFries-total-price')
+ })
